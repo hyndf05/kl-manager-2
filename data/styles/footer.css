@@ -1,0 +1,38 @@
+.footer {
+  padding: 12px 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--fc);
+}
+
+.footer > .inner {
+  padding-left: 7px;
+}
+
+.footer .footer-line span {
+  font-size: 16px;
+}
+
+.footer .sort-credit {
+  font-weight: 500;
+  color: var(--fsc);
+}
+
+.footer .user-credit {
+  font-weight: 300;
+  color: var(--fuc);
+}
+
+.footer .footer-line.version {
+  line-height: 13px;
+}
+
+.footer .footer-line.version span {
+  font-size: 10px;
+  color: #717171;
+}
+
+.footer .user-credit a:hover {
+  text-decoration: underline;
+  color: #39468b;
+}

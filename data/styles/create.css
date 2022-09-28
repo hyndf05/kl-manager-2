@@ -1,0 +1,46 @@
+.create {
+  width: 100%;
+  height: 61px;
+  background-color: var(--hc);
+}
+
+.create > .inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.create .inner .item {
+  display: flex;
+  height: 38px;
+  width: 91%;
+  border: 1px solid var(--bd);
+  border-radius: 7px;
+  box-shadow: 0 0 3px var(--bd);
+}
+
+.create-team-name {
+  width: calc(100% - 40px);
+  height: 100%;
+  border-radius: 7px 0 0 7px;
+  color: var(--fa);
+  padding-left: 8px;
+  font-size: 15px;
+  background-color: var(--fg);
+}
+
+.create-team {
+  width: 40px;
+  background-color: var(--fg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  border-radius: 0 7px 7px 0;
+}
+
+.create-team span {
+  font-size: 27px;
+  font-weight: 200;
+  color: var(--fa);
+}

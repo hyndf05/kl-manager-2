@@ -1,0 +1,104 @@
+.header {
+  width: 100%;
+  height: var(--hh);
+  background-color: var(--hc);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.header > .inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header > .inner > div {
+  height: 100%;
+}
+
+.header > .inner > a {
+  color: #000000;
+}
+
+.logo {
+  width: var(--hh);
+  height: 100%;
+}
+
+.menu {
+  width: var(--hh);
+  height: 100%;
+}
+
+.menu-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-box span {
+  font-size: 29px;
+  font-weight: 200;
+  color: var(--fa);
+}
+
+.logo-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-box span {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--fa);
+}
+
+.users {
+  width: calc(100% - (2 * var(--hh)));
+}
+
+.users-box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.users-bx-coin {
+  width: auto;
+  height: 100%;
+  display: flex;
+  padding: 0 11px;
+}
+
+.users-bx-coin-png {
+  width: var(--hh);
+  height: var(--hh);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.users-bx-coin-png img {
+  width: 68%;
+  height: 68%;
+  object-fit: cover;
+}
+
+.users-bx-coin-account {
+  width: calc(100% - var(--hh));
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.users-bx-coin-account span {
+  font-size: 18px;
+  color: var(--fa);
+}

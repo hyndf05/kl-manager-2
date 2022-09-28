@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  transition: .4s all;
+}
+
+input, button {
+  outline: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+  background-color: var(--bg);
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+}
+
+.mtb {
+  margin-top: 7px;
+}
+
+body.la .loading {
+  z-index: 10;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255,255,255,.88);
+  z-index: -1;
+  transition: 0s;
+  backdrop-filter: blur(14px);
+}
+
+.loading * {
+  transition: 0s;
+}
+
+.loading > .inner {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.loading span {
+  position: relative;
+  top: 67px;
+  width: auto;
+  height: auto;
+  margin: 0!important;
+  font-size: 17px;
+}
+
+.fixed-for-prealpha {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--hc);
+  border: 1px solid var(--bd);
+  position: fixed;
+  z-index: 10;
+  bottom: 12px;
+  right: 12px;
+}
+
+.fixed-for-prealpha button {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#mode span {
+  font-size: 23px;
+  display: none;
+  color: var(--fh);
+}

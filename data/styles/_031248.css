@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+input, button {
+  outline: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.tabs {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  box-shadow: 0 0 6px #eeeeee;
+}
+
+input, button {
+  height: 100%;
+}
+
+input {
+  width: calc(100% - 50px);
+  font-size: 15px;
+  padding-left: 11px;
+}
+
+button {
+  width: 50px;
+  font-size: 15px;
+}
+
+.logs {
+  width: 100%;
+  height: calc(100% - 47px);
+  padding-top: 17.8px;
+}
+
+.logs-ind {
+  width: 100%;
+  height: 26px;
+  position: relative;
+}
+
+.logs-ind span {
+  font-size: 21px;
+  position: absolute;
+  left: 11px;
+  top: 0;
+}

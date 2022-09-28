@@ -1,0 +1,25 @@
+.shouting {
+  width: 100%;
+  height: 100px;
+  background-color: var(--hc);
+  position: relative;
+}
+
+.shouting > .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.shouting span {
+  font-size: 18px;
+  color: var(--fa);
+}
+
+.change-shouting {
+  position: absolute;
+  font-size: 11px!important;
+  bottom: 7px;
+  right: 7px;
+  color: #900c3f;
+}

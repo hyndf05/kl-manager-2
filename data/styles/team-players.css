@@ -1,0 +1,33 @@
+.team-players {
+  width: 100%;
+  height: 47px;
+  background-color: var(--hc);
+  position: sticky;
+  top: var(--hh);
+  z-index: 9;
+}
+
+.team-players > .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team-players table {
+  width: 98%;
+  height: 31px;
+}
+
+.team-players th {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.team-players td {
+  font-size: 10px;
+}
+
+.team-players th, .team-players td {
+  text-align: center;
+  color: var(--fa);
+}
