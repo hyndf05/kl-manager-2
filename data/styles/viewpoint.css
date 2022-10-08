@@ -6,6 +6,14 @@
   right: 0;
 }
 
+.ens-frame.compare {
+  z-index: 11!important;
+}
+
+.ens-frame.compare.vx {
+  right: 0;
+}
+
 .ens-frame.login.vx {
   right: 0;
 }
@@ -37,9 +45,15 @@
   right: 110%;
   background-color: rgba(255,255,255,.97);
   backdrop-filter: blur(11px);
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .ens-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white0);
+  z-index: 12;
   width: 100%;
   height: 47px;
   box-shadow: 0 0 4px var(--white6);
@@ -247,4 +261,163 @@
 
 .ens-gtJoin, .ens-gtLogin {
   width: 21%;
+}
+
+.ens-comparecontents-main-player, .ens-comparecontents-sub-player {
+  width: 80px;
+}
+
+.ens-comparecontents-versus {
+  width: 110px;
+}
+
+.ens-comparecontents-sub-player select {
+  width: 100%;
+  height: 81%;
+  font-size: 23px;
+  appearance: none;
+  outline: none;  
+  border-radius: 7px;
+  border: 0;
+  margin-bottom: 2px;
+  text-align-last: center;
+  background-color: var(--white0);
+}
+
+.ens-comparecontents-main-player, .ens-comparecontents-sub-player, .ens-comparecontents-versus {
+  display: flex;
+  height: 47px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#ens-comparecontents-main-player, .ens-comparecontents-sub-player select {
+  font-size: 23px;
+  font-weight: 400;
+  padding: 2px 6px;
+  border-radius: 11px;
+}
+
+#ens-comparecontents-main-player {
+  background-color: #e7bbbb;
+}
+
+.ens-comparecontents-sub-player select {
+  background-color: #bbd0e7;
+}
+
+#ens-comparecontents-versus {
+  text-align: center;
+  font-family: 'SB Aggro';
+  color: #910f0f;
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: 2.5px;
+}
+
+.ens-frame.compare .ens-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ens-comparecontents-v0-button {
+  width: 53%;
+  height: auto;
+  margin: 0 auto;
+  padding: 7px 11px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--special4);
+  position: relative;
+  margin-top: 36px;
+}
+
+.ens-comparecontents-v0-button span {
+  font-size: 18px;
+}
+
+.ens-comparecontents-v0-button:hover {
+  background-color: var(--special5);
+}
+
+.ens-comparecontents-v0-setlist {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 63px;
+  padding: 10px 11px 29px 11px;
+}
+
+.ens-comparecontents-v1-stats-p1, .ens-comparecontents-v1-stats-p2, .ens-comparecontents-v1-stats-p3, .ens-comparecontents-v1-stats-p4, .ens-comparecontents-v1-stats-p5 {
+  width: 100%;
+  height: auto;
+  margin-top: 13px;
+}
+
+.ens-comparecontents-v1-stats-p1-title, .ens-comparecontents-v1-stats-p2-title, .ens-comparecontents-v1-stats-p3-title, .ens-comparecontents-v1-stats-p4-title, .ens-comparecontents-v1-stats-p5-title {
+  padding: 6px 0 2px 0;
+}
+
+.ens-comparecontents-v1-stats-p1-title > span, .ens-comparecontents-v1-stats-p2-title > span, .ens-comparecontents-v1-stats-p3-title > span, .ens-comparecontents-v1-stats-p4-title > span, .ens-comparecontents-v1-stats-p5-title > span {
+  font-size: 14px;
+}
+
+.ens-comparecontents-v1-stats-p1-content, .ens-comparecontents-v1-stats-p2-content, .ens-comparecontents-v1-stats-p3-content, .ens-comparecontents-v1-stats-p4-content, .ens-comparecontents-v1-stats-p5-content {
+  width: 100%;
+  height: 32px;
+  position: relative;
+}
+
+.ens-comparecontents-v1-stats-p1-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p1-content-progress-subPlayer, .ens-comparecontents-v1-stats-p2-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p2-content-progress-subPlayer, .ens-comparecontents-v1-stats-p3-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p3-content-progress-subPlayer, .ens-comparecontents-v1-stats-p4-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p4-content-progress-subPlayer, .ens-comparecontents-v1-stats-p5-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p5-content-progress-subPlayer {
+  width: 0%;
+  height: 16px;
+  position: absolute;
+}
+
+.ens-comparecontents-v1-stats-p1-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p2-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p3-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p4-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p5-content-progress-mainPlayer {
+  top: 0;
+}
+
+.ens-comparecontents-v1-stats-p1-content-progress-subPlayer, .ens-comparecontents-v1-stats-p2-content-progress-subPlayer, .ens-comparecontents-v1-stats-p3-content-progress-subPlayer, .ens-comparecontents-v1-stats-p4-content-progress-subPlayer, .ens-comparecontents-v1-stats-p5-content-progress-subPlayer {
+  bottom: 0;
+}
+
+.ens-comparecontents-v1-stats-p1-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p2-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p3-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p4-content-progress-mainPlayer, .ens-comparecontents-v1-stats-p5-content-progress-mainPlayer {
+  background-color: #e7bbbb;
+}
+
+.ens-comparecontents-v1-stats-p1-content-progress-subPlayer, .ens-comparecontents-v1-stats-p2-content-progress-subPlayer, .ens-comparecontents-v1-stats-p3-content-progress-subPlayer, .ens-comparecontents-v1-stats-p4-content-progress-subPlayer, .ens-comparecontents-v1-stats-p5-content-progress-subPlayer {
+  background-color: #bbd0e7;
+}
+
+.ens-comparecontent-relative {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ens-comparecontents-retry {
+  width: calc(100% - 13px);
+  height: 30px;
+  position: relative;
+  top: 13px;
+  left: 13px;
+  display: none;
+}
+
+.ens-comparecontents-retry span {
+  font-size: 27px!important;
+  font-weight: 200!important;
+}
+
+.ens-comparecontents-sub-player select * {
+  background-color: #ffffff;
+}
+
+.ens-comparecontents-v1-setdesk {
+  background-color: #f5f1eb;
 }

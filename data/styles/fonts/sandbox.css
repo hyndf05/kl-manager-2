@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'SB Aggro';
+    src: url('SBAggroB.woff2') format('woff2'),
+        url('SBAggroB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SB Aggro';
+    src: url('SBAggroL.woff2') format('woff2'),
+        url('SBAggroL.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SB Aggro';
+    src: url('SBAggroM.woff2') format('woff2'),
+        url('SBAggroM.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

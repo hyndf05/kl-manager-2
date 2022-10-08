@@ -25,10 +25,12 @@ $('.pret-question-head').click(function(){
 
 $('.menu').click(function(){
   $('body').addClass('ae');
+  $('body').addClass('ox');
 })
 
 $('.ens-frame.recruit .ens-icon').click(function(){
   $('.ens-frame.recruit').removeClass('vx');
+  $('body').removeClass('ox');
   $('.ens-progress').css('width', '0');
   setTimeout(function(){$('#analData').css('display', 'block');}, 250)
   $('#analData').text('데이터 수집 중..');
@@ -37,19 +39,35 @@ $('.ens-frame.recruit .ens-icon').click(function(){
 $('.ens-frame.login .ens-icon').click(function(){
   $('.ens-frame.login').removeClass('vx');
   $('.capt').removeClass('vx');
+  $('body').removeClass('ox');
 });
 
 $('.ens-frame.join .ens-icon').click(function(){
   $('.ens-frame.join').removeClass('vx');
   $('.capt').removeClass('vx');
+  $('body').removeClass('ox');
 });
 
 $('.ens-gtJoin').click(function(){
   $('.ens-frame.login').removeClass('vx');
   $('.ens-frame.join').addClass('vx');
+  $('body').addClass('ox');
 });
 
 $('.ens-gtLogin').click(function(){
   $('.ens-frame.join').removeClass('vx');
   $('.ens-frame.login').addClass('vx');
+  $('body').addClass('ox');
 });
+
+$('.ens-frame.compare .ens-icon').click(function(){
+  $('.ens-frame.compare').removeClass('vx');
+  $('body').removeClass('ox');
+  $('.ens-comparecontents-retry').css('display', 'none');
+  $('.ens-comparecontents-c-xx-automark').css('display', 'block');
+  $('.ens-comparecontents-v1-stats-p1-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p2-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p3-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p4-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p5-content > div').css('width', '0%');
+})

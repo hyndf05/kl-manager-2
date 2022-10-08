@@ -23,9 +23,13 @@ html, body {
   height: 100%;
 }
 
+body.ox .wrap {
+  overflow: hidden;
+}
+
 .wrap {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: var(--white1);
 }
 
@@ -39,7 +43,7 @@ html, body {
 }
 
 body.la .loading {
-  z-index: 10;
+  z-index: 13;
 }
 
 .loading {

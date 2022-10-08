@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/data/styles/fonts/sandbox.css" />
     <link rel="stylesheet" href="/data/styles/viewpoint.css" />
     <link rel="stylesheet" href="/data/styles/ad.css" />
     <link rel="stylesheet" href="/data/styles/setup.css" />
@@ -27,14 +28,178 @@
     <script defer src="/data/scripts/apps.js"></script>
     <script defer src="/data/scripts/mode.js"></script>
   </head>
-  <body class="la">
+  <body class="la ox">
     <div class="viewpoint">
+      <div class="compare ens-frame">
+          <div class="ens-header">
+            <div class="inner">
+              <div class="ens-subject">
+                <span class="ens-subject-sub">선수 비교</span>
+              </div>
+              <div class="ens-icon">
+                <span class="material-symbols-outlined">close</span>
+              </div>
+            </div>
+          </div>
+          <div class="ens-comparecontents-retry">
+            <span class="material-symbols-outlined">clear_all</span>
+          </div>
+          <div class="ens-content">
+            <div class="ens-comparecontents-main-player">
+              <span id="ens-comparecontents-main-player"></span>
+            </div>
+            <div class="ens-comparecontents-versus">
+              <span id="ens-comparecontents-versus">VS</span>
+            </div>
+            <div class="ens-comparecontents-sub-player">
+              <select>
+                <optgroup label="PRO">
+                  <option>김다원</option>
+                  <option>김승태</option>
+                  <option>노준현</option>
+                  <option>박인수</option>
+                  <option>박현수</option>
+                  <option>배성빈</option>
+                  <option>송용준</option>
+                  <option>유영혁</option>
+                  <option>유창현</option>
+                  <option>이은택</option>
+                  <option>이재혁</option>
+                  <option>정승하</option>
+                  <option>최영훈</option>
+                  <option>NEAL</option>  
+                </optgroup>
+                <optgroup label="AMA">
+                  <option>강다훈</option>
+                  <option>권순우</option>
+                  <option>권효진</option>
+                  <option>김민성</option>
+                  <option>김민준</option>
+                  <option>김우준</option>
+                  <option>김정연</option>
+                  <option>박태민</option>
+                  <option>석주엽</option>
+                  <option>심우혁</option>
+                  <option>안정환</option>
+                  <option>원종태</option>
+                  <option>유민선</option>
+                  <option>윤서형</option>  
+                  <option>윤성재</option>
+                  <option>윤태웅</option>
+                  <option>이은서</option>
+                  <option>주희성</option>
+                  <option>최승현</option>
+                  <option>최은성</option>
+                  <option>최준혁</option>
+                  <option>최준호</option>
+                  <option>홍성민</option>
+                  <option>황혁</option>
+                </optgroup>
+              </select>
+              <span class="ens-comparecontents-c-xx-automark" style="position:fixed;top:130px;display:block;font-size:11px;color:#ff0000;">비교할 선수를 선택하세요.</span>
+              <span id="ens-comparecontents-sub-player"></span>
+            </div>
+          </div>
+          <div class="ens-comparecontents-v0-button">
+            <span>비교하기</span>
+          </div>
+          <div class="ens-comparecontents-wrap">
+            <span class="ens-comparecontents-v0-rrm" style="position:absolute;color:var(--special3);top:61px;left:50px;display:none;">데이터 수집 중..</span>
+          </div>
+          <div class="ens-comparecontents-v0-setlist ens-comparecontents-v1-setdesk">
+            <h3 style="color:#1C2833;">능력치 비교</h3>
+            <div class="ens-comparecontents-v1-stats-p1">
+              <div class="ens-comparecontents-v1-stats-p1-title">
+                <span>주행 안정성</span>
+              </div>
+              <div class="ens-comparecontents-v1-stats-p1-content">
+                <div class="ens-comparecontents-v1-stats-p1-content-progress-mainPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-mainPlayer"></span>
+                  </div>
+                </div>
+                <div class="ens-comparecontents-v1-stats-p1-content-progress-subPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-subPlayer"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ens-comparecontents-v1-stats-p2"> <!-- 이거 바꾸기 -->
+              <div class="ens-comparecontents-v1-stats-p2-title">
+                <span>사고 회복력</span>
+              </div>
+              <div class="ens-comparecontents-v1-stats-p2-content">
+                <div class="ens-comparecontents-v1-stats-p2-content-progress-mainPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-mainPlayer"></span>
+                  </div>
+                </div>
+                <div class="ens-comparecontents-v1-stats-p2-content-progress-subPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-subPlayer"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ens-comparecontents-v1-stats-p3">
+              <div class="ens-comparecontents-v1-stats-p3-title">
+                <span>TOP3 유지력</span>
+              </div>
+              <div class="ens-comparecontents-v1-stats-p3-content">
+                <div class="ens-comparecontents-v1-stats-p3-content-progress-mainPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-mainPlayer"></span>
+                  </div>
+                </div>
+                <div class="ens-comparecontents-v1-stats-p3-content-progress-subPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-subPlayer"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ens-comparecontents-v1-stats-p4">
+              <div class="ens-comparecontents-v1-stats-p4-title">
+                <span>뒷심</span>
+              </div>
+              <div class="ens-comparecontents-v1-stats-p4-content">
+                <div class="ens-comparecontents-v1-stats-p4-content-progress-mainPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-mainPlayer"></span>
+                  </div>
+                </div>
+                <div class="ens-comparecontents-v1-stats-p4-content-progress-subPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-subPlayer"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ens-comparecontents-v1-stats-p5">
+              <div class="ens-comparecontents-v1-stats-p5-title">
+                <span>라인 효율성</span>
+              </div>
+              <div class="ens-comparecontents-v1-stats-p5-content">
+                <div class="ens-comparecontents-v1-stats-p5-content-progress-mainPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-mainPlayer"></span>
+                  </div>
+                </div>
+                <div class="ens-comparecontents-v1-stats-p5-content-progress-subPlayer">
+                  <div class="ens-comparecontent-relative">
+                    <span class="ens-comparecontents-subPlayer"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="capt"></div>
       <div class="crash">
         <span class="selectedPlayer"></span>
       </div>
       <div class="recruit ens-frame">
-        <div class="inner">
           <div class="ens-header">
             <div class="inner">
               <div class="ens-subject">
@@ -177,196 +342,194 @@
       </div>
     </div>
     <div class="main wrap">
-      <div class="header">
-        <div class="inner">
-          <div class="menu">
-            <div class="menu-box">
-              <span class="material-symbols-outlined">menu</span>
-            </div>
-          </div>
-          <a href="/">
-            <div class="logo">
-              <div class="logo-box">
-                <span>KL</span>
+      <div class="inner">
+        <div class="header">
+          <div class="inner">
+            <div class="menu">
+              <div class="menu-box">
+                <span class="material-symbols-outlined">menu</span>
               </div>
             </div>
-          </a>
-          <div class="users">
-            <div class="users-box">
-              <div class="users-bx-coin">
-                <div class="users-bx-coin-png">
-                  <img src="/data/images/icons/coin.png">
-                </div>
-                <div class="users-bx-coin-account">
-                  <span id="kCoin">999</span>
+            <a href="/">
+              <div class="logo">
+                <div class="logo-box">
+                  <span>KL</span>
                 </div>
               </div>
+            </a>
+            <div class="users">
+              <div class="users-box">
+                <div class="users-bx-coin">
+                  <div class="users-bx-coin-png">
+                    <img src="/data/images/icons/coin.png">
+                  </div>
+                  <div class="users-bx-coin-account">
+                    <span id="kCoin">999</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="create">
-        <div class="inner">
-          <div class="item">
-            <input type="text" class="create-team-name" placeholder="구단명을 입력하세요.">
-            <button class="create-team">
-              <span class="material-symbols-outlined">add</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="team-players">
-        <div class="inner">
-          <table>
-            <thead>
-              <th>SA</th>
-              <th>RN</th>
-              <th>MD</th>
-              <th>SW</th>
-              <th>HY</th>
-              <th>IA</th>
-            </thead>
-            <tbody>
-              <td>
-                <span>유창현</span>
-              </td>
-              <td>
-                <span>박인수</span>
-              </td>
-              <td>
-                <span>유영혁</span>
-              </td>
-              <td>
-                <span>최영훈</span>
-              </td>
-              <td>
-                <span>김승태</span>
-              </td>
-              <td>
-                <span>이은택</span>
-              </td>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div>
-        <div class="list-players">
+        <div class="create">
           <div class="inner">
-            <div class="line">
-              <div class="line-let pro selected">
-                <span>PRO</span>
-              </div>
-              <div class="line-let amateur">
-                <span>AMA</span>
-              </div>
-              <div class="line-players pro selected"></div>
-              <div class="line-players amateur"></div>
+            <div class="item">
+              <input type="text" class="create-team-name" placeholder="구단명을 입력하세요.">
+              <button class="create-team">
+                <span class="material-symbols-outlined">add</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="shouting">
+        <div class="team-players">
           <div class="inner">
-            <span id="dfi">.</span>
+            <table>
+              <thead>
+                <th>SA</th>
+                <th>RN</th>
+                <th>MD</th>
+                <th>SW</th>
+                <th>HY</th>
+                <th>IA</th>
+              </thead>
+              <tbody>
+                <td>
+                  <span>유창현</span>
+                </td>
+                <td>
+                  <span>박인수</span>
+                </td>
+                <td>
+                  <span>유영혁</span>
+                </td>
+                <td>
+                  <span>최영훈</span>
+                </td>
+                <td>
+                  <span>김승태</span>
+                </td>
+                <td>
+                  <span>이은택</span>
+                </td>
+              </tbody>
+            </table>
           </div>
-          <a class="change-shouting" target="_blank" href="/id/shouting">응원 멘트 변경</a>
         </div>
-        <div class="faq">
-          <div class="inner">
-            <div class="pret-question">
-              <div class="pret-question-head">
-                <span>포지션 소개</span>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <div class="pret-question-body">
-                <span>포지션 소개</span>
-              </div>
-            </div>
-            <div class="pret-question">
-              <div class="pret-question-head">
-                <span>프로 / 아마추어 선정 기준</span>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <div class="pret-question-body">
-                <span>팀전, 개인전 선수: 선수 소속이 프로팀이라면 프로로 선정됩니다.</span>
-                <span>팀전 선수: 선수 소속이 프로팀이라면 프로로 선정됩니다.</span>
-                <span>개인전 선수: 선수가 한 경기동안 1위를 2번이상 차지할 경우 프로로 선정됩니다.</span>
-              </div>
-            </div>
-            <div class="pret-question">
-              <div class="pret-question-head">
-                <span>선수 등록</span>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <div class="pret-question-body">
-                <span><a class="clicktomove" href="/id/players" target="_blank">여기</a>를 눌러 선수를 등록해주세요.</span>
-              </div>
-            </div>
-            <div class="pret-question">
-              <div class="pret-question-head">
-                <span>영입 비용</span>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <div class="pret-question-body">
-                <span>영입 비용</span>
-              </div>
-            </div>
-            <div class="pret-question">
-              <div class="pret-question-head">
-                <span>오픈 프로젝트</span>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <div class="pret-question-body">
-                <span><a class="clicktomove" href="/id/discord">여기</a>를 눌러 개발자들이 소통하고 있는 디스코드 채널에 접속하세요.</span>
-              </div>
-            </div>
-            <div class="pret-question">
-              <div class="pret-question-head">
-                <span>프로젝트 기여</span>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <div class="pret-question-body">
-                <span><a class="clicktomove" href="/id/projects">여기</a>를 눌러 여러분들의 재능을 프로젝트에 기여해주세요.</span>
-                <span>프로젝트에 기여하시면 크레딧 영역에 닉네임이 등록되며, 참여에 대한 금전적 보상은 없습니다.</span>
+        <div>
+          <div class="list-players">
+            <div class="inner">
+              <div class="line">
+                <div class="line-let pro selected">
+                  <span>PRO</span>
+                </div>
+                <div class="line-let amateur">
+                  <span>AMA</span>
+                </div>
+                <div class="line-players pro selected"></div>
+                <div class="line-players amateur"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="footer">
-          <div class="inner">
-            <div class="footer-line">
-              <span class="sort-credit">제작</span>
-              <span class="user-credit">
-                <a href="//instagram.com/hyndf05" target="_blank">hyndf05</a>
-              </span>
+          <div class="shouting">
+            <div class="inner">
+              <span id="dfi">.</span>
             </div>
-            <div class="footer-line">
-              <span class="sort-credit">선수 분석</span>
-              <span class="user-credit"></span>
+            <a class="change-shouting" target="_blank" href="/id/shouting">응원 멘트 변경</a>
+          </div>
+          <div class="faq">
+            <div class="inner">
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>포지션 소개</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span>포지션 소개</span>
+                </div>
+              </div>
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>프로 / 아마추어 선정 기준</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span>팀전, 개인전 선수: 선수 소속이 프로팀이라면 프로로 선정됩니다.</span>
+                  <span>팀전 선수: 선수 소속이 프로팀이라면 프로로 선정됩니다.</span>
+                  <span>개인전 선수: 선수가 한 경기동안 1위를 2번이상 차지할 경우 프로로 선정됩니다.</span>
+                </div>
+              </div>
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>선수 등록</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span><a class="clicktomove" href="/id/players" target="_blank">여기</a>를 눌러 선수를 등록해주세요.</span>
+                </div>
+              </div>
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>영입 비용</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span>영입 비용</span>
+                </div>
+              </div>
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>오픈 프로젝트</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span><a class="clicktomove" href="/id/discord">여기</a>를 눌러 개발자들이 소통하고 있는 디스코드 채널에 접속하세요.</span>
+                </div>
+              </div>
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>프로젝트 기여</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span><a class="clicktomove" href="/id/projects">여기</a>를 눌러 여러분들의 재능을 프로젝트에 기여해주세요.</span>
+                  <span>프로젝트에 기여하시면 크레딧 영역에 닉네임이 등록되며, 참여에 대한 금전적 보상은 없습니다.</span>
+                </div>
+              </div>
             </div>
-            <div class="footer-line">
-              <span class="sort-credit">밴픽 분석</span>
-              <span class="user-credit"></span>
-            </div>
-            <div class="footer-line">
-              <span class="sort-credit">지원</span>
-              <span class="user-credit">
-                <a href="//instagram.com/drop_castle" target="_blank">drop_castle</a>
-              </span>
-            </div>
-            <div class="footer-line">
-              <span class="user-credut">Sponsored by NiZ Esports</span>
-            </div>
-            <div class="footer-line version">
-              <span class="sort-version">KL MANAGER 2 <span id="version">UNKN</span></span>
+          </div>
+          <div class="footer">
+            <div class="inner">
+              <div class="footer-line">
+                <span class="sort-credit">제작</span>
+                <span class="user-credit">
+                  <a href="//instagram.com/hyndf05" target="_blank">hyndf05</a>
+                </span>
+              </div>
+              <div class="footer-line">
+                <span class="sort-credit">선수 분석</span>
+                <span class="user-credit"></span>
+              </div>
+              <div class="footer-line">
+                <span class="sort-credit">밴픽 분석</span>
+                <span class="user-credit"></span>
+              </div>
+              <div class="footer-line">
+                <span class="sort-credit">지원</span>
+                <span class="user-credit">
+                  <a href="//instagram.com/drop_castle" target="_blank">drop_castle</a>
+                </span>
+              </div>
+              <div class="footer-line">
+                <span class="user-credut">Sponsored by NiZ Esports</span>
+              </div>
+              <div class="footer-line version">
+                <span class="sort-version">KL MANAGER 2 <span id="version">UNKN</span></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-<script>
-
-  
-</script>
     <script type="module">
       
   // Import the functions you need from the SDKs you need
@@ -472,6 +635,7 @@ signInWithEmailAndPassword(auth, email2, password2)
 /* ############################################################## */
 
 $('.indi-players').click(function(){
+  $('body').addClass('ox');
   var tku = $(this).attr('id');
   var playerImages = `/data/images/players/${tku}.png`;
   $('.ens-uPlayer').attr('src', playerImages)
@@ -505,8 +669,102 @@ const starCountRef = ref(db, `players/playerSkills/${tku}`);
       }, 700)
       }
     });
-  
 });
+
+/* ############################################ */
+      
+$('.ens-pPlayer').click(function(){
+  $('.ens-frame.compare').addClass('vx');
+  var mainPlayer = $('.selectedPlayer').text();
+  $('#ens-comparecontents-main-player').text(mainPlayer);
+})
+
+/* ############################################ */
+      
+$('.ens-comparecontents-v0-button').click(function(){
+
+var iox = 0;
+
+$('.ens-comparecontents-c-xx-automark').css('display', 'none');
+$('.ens-comparecontents-v0-rrm').css('display', 'block');
+$('.ens-comparecontents-retry').css('display', 'block');
+$('.ens-comparecontents-v0-button').css('display', 'none');
+  
+var mainPlayer = $('#ens-comparecontents-main-player').text();
+var subPlayer = $('.ens-comparecontents-sub-player option:selected').val();
+console.log(subPlayer);
+  
+const starCountRef = ref(db, `players/playerSkills/${mainPlayer}`);
+onValue(starCountRef, (snapshot) => {
+  const data = snapshot.val();
+  var p1 = Number(data.주행안정성);
+  var p2 = Number(data.사고회복력);
+  var p3 = Number(data.TOP3유지력);
+  var p4 = Number(data.뒷심);
+  var p5 = Number(data.라인효율성);
+  var p11 = p1.length;
+  var p21 = p2.length;
+  var p31 = p3.length;
+  var p41 = p4.length;
+  var p51 = p5.length;
+  if (p11 < 1 || p21 < 1 || p31 < 1 || p41 < 1 || p51 < 1) {
+  } else {
+    var mainPlayerStat = p3 + ((p5+p1)/p4) + (p2+(p2/p4)) - (p3-p4);
+  setTimeout(function(){
+    $('.ens-comparecontents-v1-stats-p1-content-progress-mainPlayer').css('width', `${p1}%`);
+    $('.ens-comparecontents-v1-stats-p2-content-progress-mainPlayer').css('width', `${p2}%`);
+    $('.ens-comparecontents-v1-stats-p3-content-progress-mainPlayer').css('width', `${p3}%`);
+    $('.ens-comparecontents-v1-stats-p4-content-progress-mainPlayer').css('width', `${p4}%`);
+    $('.ens-comparecontents-v1-stats-p5-content-progress-mainPlayer').css('width', `${p5}%`);
+    console.log(mainPlayerStat);
+    iox ++;
+  }, 2200)
+  }
+});
+
+const starCountRef2 = ref(db, `players/playerSkills/${subPlayer}`);
+onValue(starCountRef2, (snapshot) => {
+  $('.ens-comparecontents-v0-rrm').text('데이터 분석 중..');
+  const data = snapshot.val();
+  var p6 = Number(data.주행안정성);
+  var p7 = Number(data.사고회복력);
+  var p8 = Number(data.TOP3유지력);
+  var p9 = Number(data.뒷심);
+  var p10 = Number(data.라인효율성);
+  var p61 = p6.length;
+  var p71 = p7.length;
+  var p81 = p8.length;
+  var p91 = p9.length;
+  var p101 = p10.length;
+  if (p61 < 1 || p71 < 1 || p81 < 1 || p91 < 1 || p101 < 1) {
+  } else {
+    var subPlayerStat = p8 + ((p10+p6)/p9) + (p7+(p7/p9)) - (p8-p9);
+  setTimeout(function(){
+    $('.ens-comparecontents-v0-rrm').css('display', 'none');
+    $('.ens-comparecontents-v1-stats-p1-content-progress-subPlayer').css('width', `${p6}%`);
+    $('.ens-comparecontents-v1-stats-p2-content-progress-subPlayer').css('width', `${p7}%`);
+    $('.ens-comparecontents-v1-stats-p3-content-progress-subPlayer').css('width', `${p8}%`);
+    $('.ens-comparecontents-v1-stats-p4-content-progress-subPlayer').css('width', `${p9}%`);
+    $('.ens-comparecontents-v1-stats-p5-content-progress-subPlayer').css('width', `${p10}%`);
+    console.log(subPlayerStat);
+    iox ++;
+  }, 2200)
+  }
+});
+})
+
+/* ################################# */
+      
+$('.ens-comparecontents-retry').click(function(){
+  $(this).css('display', 'none');
+  $('.ens-comparecontents-c-xx-automark').css('display', 'block');
+  $('.ens-comparecontents-v0-button').css('display', 'flex');
+  $('.ens-comparecontents-v1-stats-p1-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p2-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p3-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p4-content > div').css('width', '0%');
+  $('.ens-comparecontents-v1-stats-p5-content > div').css('width', '0%');
+})
 </script>
 <script type="module" defer src="/data/scripts/works.js"></script>
   </body>
