@@ -1,3 +1,26 @@
+/* 2022.10.07 ~ */
+:root {
+  --white0: #ffffff;
+  --white1: #fcfcfd;
+  --white2: #eeeeee;
+  --white3: #fafafa;
+  --white4: #f9f9f9;
+  --white5: #d7d8eb;
+  --white6: #e1e1e1;
+  --white7: #f1f1f1;
+  --black0: #000000;
+  --black1: #212121;
+  --special0: #080b31;
+  --special1: #2d3165;
+  --special2: #313131;
+  --special3: #900c3f;
+  --special4: #27438c;
+  --special5: #afb9d4;
+  --hh: 45px;
+}
+
+/*
+2020.09.29 ~ 2022.10.06
 :root {
   --bg: #fcfcfd;
   --hc: #ffffff;
@@ -17,24 +40,4 @@
   --fuc: #313131;
   --fc: #fafafa;
 }
-
-:root[data-theme='dark'] {
-  --bg: #080808;
-  --hc: #191b1d;
-  --hh: 45px;
-  
-  --bd: #151515;
-  --es: #000000;
-  --lc: #000000;
-  --fh: #ffffff;
-  --lc2: rbga(8,11,49,.61);
-  --lb: #191b1d;
-  --lm: #d7d8eb;
-  --ns: #f9f9f9;
-  --fa: #d5d7d8;
-  --fg: #000000;
-  --ma: #0a0500;
-  --fsc:  #424242;
-  --fuc: #797979;
-  --fc: #010101;
-}
+*/

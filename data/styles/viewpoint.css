@@ -1,0 +1,250 @@
+.crash {
+  display: none;
+}
+
+.ens-frame.recruit.vx {
+  right: 0;
+}
+
+.ens-frame.login.vx {
+  right: 0;
+}
+
+.ens-frame.join.vx {
+  right: 0;
+}
+
+.capt.vx {
+  top: 0;
+}
+
+.capt {
+  position: fixed;
+  top: 100%;
+  transition: 0s;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.ens-frame {
+  box-shadow: 0 0 6px var(--white6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  right: 110%;
+  background-color: rgba(255,255,255,.97);
+  backdrop-filter: blur(11px);
+}
+
+.ens-header {
+  width: 100%;
+  height: 47px;
+  box-shadow: 0 0 4px var(--white6);
+}
+
+.ens-header > .inner {
+  display: flex;
+}
+
+.ens-subject {
+  width: calc(100% - 47px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+}
+
+.ens-icon {
+  width: 47px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ens-icon span {
+  font-size: 29px!important;
+  font-weight: 200;
+}
+
+.ens-subject-sub {
+  font-size: 19px;
+}
+
+.ens-content {
+  position: relative;
+  width: 100%;
+  padding: 0 6px;
+  height: auto;
+  padding: 7px 0;
+}
+
+.ens-frame.recruit .ens-content {
+  background-color: var(--white7);
+}
+
+.ens-nPlayer, .ens-gPlayer {
+  width: 100%;
+  height: auto;
+  padding: 0 13px;
+}
+
+.ens-nPlayer {
+}
+
+.ens-nPlayer span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.ens-aPlayer {
+  position: relative;
+  width: calc(100% + 7px);
+  height: auto;
+  display: flex;
+  left: -7px;
+}
+
+.ens-fPlayer {
+  width: 142px;
+  height: 155.08px;
+}
+
+.ens-uPlayer {
+  width: 100%;
+  height: 100%;
+}
+
+.ens-vPlayer {
+  margin-top: 27px;
+  display: grid;
+  width: calc(100% - 142px);
+  padding-right: 13px;
+}
+
+.ens-progress {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+}
+
+.ens-abs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ens-12vPlayer {
+  background-color: #cda8a6;
+}
+
+.ens-22vPlayer {
+  background-color: #cdbfa6;
+}
+
+.ens-32vPlayer {
+  background-color: #c9cda6;
+}
+
+.ens-42vPlayer {
+  background-color: #aecda6;
+}
+
+.ens-52vPlayer {
+  background-color: #a6b1cd;
+}
+
+.ens-abs > span {
+  position: relative;
+  z-index: 13;
+  left: 7px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ens-gPlayer {
+  margin-top: 17px;
+  width: 100%;
+  padding: 0 13px;
+  height: 41px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ens-gPlayer > div {
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--special4);
+}
+
+.ens-ggTools > div:hover, .ens-gPlayer > div:hover {
+  background-color: var(--special5);
+}
+
+.ens-gPlayer > div > span {
+  font-size: 18px;
+}
+
+.ens-bPlayer {
+  width: 63%;
+}
+
+.ens-pPlayer {
+  width: 21%;
+}
+
+.ens-bPlayer, .ens-pPlayer {
+  background-color: var(--white1);
+  box-shadow: 3px 4px 11px var(--white5);
+}
+
+.ens-input {
+  width: 90%;
+  height: 44px;
+  border: 1px solid var(--white2);
+  border-radius: 7px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 7px;
+  padding-left: 11px;
+  font-size: 17px;
+}
+
+.ens-ggTools {
+  margin-top: 17px;
+  width: 100%;
+  padding: 0 13px;
+  height: 41px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ens-ggTools > div {
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--special4);
+}
+
+.ens-ggTools > div > span {
+  font-size: 18px;
+}
+
+.ens-ggLogin, .ens-ggJoin {
+  width: 63%;
+}
+
+.ens-gtJoin, .ens-gtLogin {
+  width: 21%;
+}

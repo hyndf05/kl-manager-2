@@ -2,7 +2,7 @@
   padding: 12px 0;
   width: 100%;
   height: auto;
-  background-color: var(--fc);
+  background-color: var(--white0);
 }
 
 .footer > .inner {
@@ -15,12 +15,12 @@
 
 .footer .sort-credit {
   font-weight: 500;
-  color: var(--fsc);
+  color: var(--black0);
 }
 
 .footer .user-credit {
   font-weight: 300;
-  color: var(--fuc);
+  color: var(--special2);
 }
 
 .footer .footer-line.version {

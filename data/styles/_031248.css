@@ -24,7 +24,7 @@ html, body {
   width: 100%;
   height: 47px;
   display: flex;
-  box-shadow: 0 0 6px #eeeeee;
+  box-shadow: 0 0 6px var(--white2);
 }
 
 input, button {
@@ -45,7 +45,7 @@ button {
 .logs {
   width: 100%;
   height: calc(100% - 47px);
-  padding-top: 17.8px;
+  padding-top: 1px;
 }
 
 .logs-ind {

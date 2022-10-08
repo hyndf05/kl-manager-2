@@ -1,11 +1,13 @@
 var toggle = document.getElementById("mode");
 var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 var currentTheme = document.documentElement.getAttribute("data-theme");
-
+var mode = 0;
 $('#mode .span').css('display','none');
 if (storedTheme == 'light') {
+  mode = 1;
   $('.material-symbols-outlined.dark').css('display','block');
 } else if (storedTheme == 'dark') {
+  mode = 2;
   $('.material-symbols-outlined.light').css('display','block');
 }
 

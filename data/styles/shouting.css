@@ -1,7 +1,7 @@
 .shouting {
   width: 100%;
   height: 100px;
-  background-color: var(--hc);
+  background-color: var(--white0);
   position: relative;
 }
 
@@ -13,13 +13,14 @@
 
 .shouting span {
   font-size: 18px;
-  color: var(--fa);
+  color: var(--black0);
 }
 
 .change-shouting {
   position: absolute;
-  font-size: 11px!important;
+  font-size: 10px!important;
   bottom: 7px;
   right: 7px;
-  color: #900c3f;
+  color: var(--special3);
+  font-weight: 100;
 }

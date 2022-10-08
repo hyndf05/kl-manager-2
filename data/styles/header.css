@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: var(--hh);
-  background-color: var(--hc);
+  background-color: var(--white0);
   position: sticky;
   top: 0;
   z-index: 9;
@@ -41,7 +41,7 @@
 .menu-box span {
   font-size: 29px;
   font-weight: 200;
-  color: var(--fa);
+  color: var(--black0);
 }
 
 .logo-box {
@@ -55,7 +55,7 @@
 .logo-box span {
   font-size: 21px;
   font-weight: 500;
-  color: var(--fa);
+  color: var(--black0);
 }
 
 .users {
@@ -100,5 +100,5 @@
 
 .users-bx-coin-account span {
   font-size: 18px;
-  color: var(--fa);
+  color: var(--black0);
 }

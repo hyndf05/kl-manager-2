@@ -1,14 +1,14 @@
 .list-players {
   width: 100%;
   height: auto;
-  background-color: var(--lm);
+  background-color: var(--white5);
 }
 
 .line {
   width: 100%;
   height: 140px;
   position: relative;
-  background-color: var(--lc);
+  background-color: var(--special0);
 }
 
 .line-let {
@@ -19,9 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--lc);
+  background-color: var(--special0);
   /* backdrop-filter: blur(11px); */
-  border-right: 1px solid var(--lb);
+  border-right: 1px solid var(--special1);
 }
 
 .line .line-let:nth-child(1) {
@@ -38,12 +38,8 @@
   font-size: 15px;
   letter-spacing: 4.7px;
   margin-top: -4.7px;
-  color: var(--ns);
-  font-weight: 300;
-}
-
-.line-let.selected span {
-  color: #ffffff;
+  color: var(--white4);
+  font-weight: 600;
 }
 
 .line-players {
@@ -78,11 +74,11 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--es);
+  background-color: var(--white3);
   width: 100%;
   text-align: center;
 }
 
 .name-players span {
-  color: var(--fa);
+  color: var(--black0);
 }

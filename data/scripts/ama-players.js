@@ -28,7 +28,7 @@ for (let i=1;i<24;i++) {
 $('.line-players.amateur').append(`
 <div class="indi-players" id="${o}">
   <div class="face-players">
-    <img src="/data/images/players/${o}.png" loading="lazy">
+    <img src="/data/images/players/${o}.png">
   </div>
   <div class="name-players">
     <span>${o}</span>

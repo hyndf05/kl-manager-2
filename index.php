@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/data/styles/viewpoint.css" />
+    <link rel="stylesheet" href="/data/styles/ad.css" />
     <link rel="stylesheet" href="/data/styles/setup.css" />
     <link rel="stylesheet" href="/data/styles/frame.css" />
     <link rel="stylesheet" href="/data/styles/header.css" />
@@ -26,6 +28,136 @@
     <script defer src="/data/scripts/mode.js"></script>
   </head>
   <body class="la">
+    <div class="viewpoint">
+      <div class="capt"></div>
+      <div class="crash">
+        <span class="selectedPlayer"></span>
+      </div>
+      <div class="recruit ens-frame">
+        <div class="inner">
+          <div class="ens-header">
+            <div class="inner">
+              <div class="ens-subject">
+                <span class="ens-subject-sub">선수 영입</span>
+              </div>
+              <div class="ens-icon">
+                <span class="material-symbols-outlined">close</span>
+              </div>
+            </div>
+          </div>
+          <div class="ens-content">
+            <!-- 
+            <div class="ens-nPlayer">
+              <span class="selectedPlayer">유창현</span>
+              <span>선수</span>
+            </div>
+            -->
+            <div class="ens-aPlayer">
+              <div class="ens-fPlayer">
+                <img src="/data/images/players/유창현.png" class="ens-uPlayer"> 
+              </div>
+              <div class="ens-vPlayer">
+                <div class="ens-1vPlayer">
+                  <div class="ens-11vPlayer ens-abs">
+                    <span>주행 안정성</span>
+                    <div class="ens-12vPlayer ens-progress"></div>
+                  </div>
+                </div>
+                <div class="ens-2vPlayer">
+                  <div class="ens-21vPlayer ens-abs">
+                    <span>사고 회복력</span>
+                    <div class="ens-22vPlayer ens-progress"></div>
+                  </div>
+                </div>
+                <div class="ens-3vPlayer">
+                  <div class="ens-31vPlayer ens-abs">
+                    <span>TOP3 유지력</span>
+                    <div class="ens-32vPlayer ens-progress"></div>
+                  </div>
+                </div>
+                <div class="ens-4vPlayer">
+                  <div class="ens-41vPlayer ens-abs">
+                    <span>뒷심</span>
+                    <div class="ens-42vPlayer ens-progress"></div>
+                  </div>
+                </div>
+                <div class="ens-5vPlayer">
+                  <div class="ens-51vPlayer ens-abs">
+                    <span>라인 효율성</span>
+                    <div class="ens-52vPlayer ens-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ens-gPlayer">
+              <div class="ens-bPlayer">
+                <span>영입하기</span>
+              </div>
+              <div class="ens-pPlayer">
+                <span>비교</span>
+              </div>
+            </div>
+            <span id="analData" style="display:block;width:100%;margin-top:11px;font-size:11px;color:var(--special3);text-align:center;">데이터 수집 중..</span>
+          </div>
+        </div>
+      </div>
+      <div class="login ens-frame">
+        <div class="ens-header">
+          <div class="inner">
+            <div class="ens-subject">
+              <span class="ens-subject-sub">로그인</span>
+            </div>
+            <div class="ens-icon">
+              <span class="material-symbols-outlined">close</span>
+            </div>
+          </div>
+        </div>
+        <div class="ens-content">
+          <div>
+            <input type="text" class="ens-input ens-input-login-team" placeholder="구단명">
+            <input type="email" class="ens-input ens-input-login-email" placeholder="매니저 이메일">
+            <input type="password" class="ens-input ens-input-login-password" placeholder="구단 암호">
+            <div class="ens-ggTools">
+              <div class="ens-ggLogin">
+                <span>로그인</span>
+              </div>
+              <div class="ens-gtJoin">
+                <span>가입</span>
+              </div>
+            </div>
+          </div>
+          <span style="display:block;margin-top:7px;text-align:center;width:100%;color:#ff0000;font-size:13px"></span>
+        </div>
+      </div>
+      <div class="join ens-frame">
+        <div class="ens-header">
+          <div class="inner">
+            <div class="ens-subject">
+              <span class="ens-subject-sub">가입</span>
+            </div>
+            <div class="ens-icon">
+              <span class="material-symbols-outlined">close</span>
+            </div>
+          </div>
+        </div>
+        <div class="ens-content">
+          <div>
+            <input type="text" class="ens-input ens-input-join-team" placeholder="구단명">
+            <input type="email" class="ens-input ens-input-join-email" placeholder="매니저 이메일">
+            <input type="password" class="ens-input ens-input-join-password" placeholder="구단 암호">
+            <div class="ens-ggTools">
+              <div class="ens-ggJoin">
+                <span>가입</span>
+              </div>
+              <div class="ens-gtLogin">
+                <span>로그인</span>
+              </div>
+            </div>
+          </div>
+          <span style="display:block;margin-top:7px;text-align:center;width:100%;color:#ff0000;font-size:13px">구단명이 존재하는 경우, 어떠한 경고없이 가입이 거부됩니다.</span>
+        </div>
+      </div>
+    </div>
     <div class="fixed-for-prealpha">
       <button id="mode">
         <span class="material-symbols-outlined light">light_mode</span>
@@ -37,7 +169,11 @@
     </div>
     <div class="loading">
       <div class="inner">
-        <span>페이지 로드 중..</span>
+        <span class="setr">페이지 로드 중..</span>
+        <div class="alti">
+          <span>원활한 진행을 위해 모든&nbsp;</span><span class="alti-now">CSS, JS</span><span>을(를) 불러오고 있습니다.</span>
+        </div>
+        <div class="alti-progress"></div>
       </div>
     </div>
     <div class="main wrap">
@@ -62,7 +198,7 @@
                   <img src="/data/images/icons/coin.png">
                 </div>
                 <div class="users-bx-coin-account">
-                  <span id="">999</span>
+                  <span id="kCoin">999</span>
                 </div>
               </div>
             </div>
@@ -130,7 +266,7 @@
         </div>
         <div class="shouting">
           <div class="inner">
-            <span>박인수 22-2 양대우승 가자!!</span>
+            <span id="dfi">.</span>
           </div>
           <a class="change-shouting" target="_blank" href="/id/shouting">응원 멘트 변경</a>
         </div>
@@ -176,6 +312,15 @@
             </div>
             <div class="pret-question">
               <div class="pret-question-head">
+                <span>오픈 프로젝트</span>
+                <span class="material-symbols-outlined">expand_more</span>
+              </div>
+              <div class="pret-question-body">
+                <span><a class="clicktomove" href="/id/discord">여기</a>를 눌러 개발자들이 소통하고 있는 디스코드 채널에 접속하세요.</span>
+              </div>
+            </div>
+            <div class="pret-question">
+              <div class="pret-question-head">
                 <span>프로젝트 기여</span>
                 <span class="material-symbols-outlined">expand_more</span>
               </div>
@@ -208,12 +353,161 @@
                 <a href="//instagram.com/drop_castle" target="_blank">drop_castle</a>
               </span>
             </div>
+            <div class="footer-line">
+              <span class="user-credut">Sponsored by NiZ Esports</span>
+            </div>
             <div class="footer-line version">
-              <span class="sort-version">KL MANAGER 2 pre-alpha 1.2.8b</span>
+              <span class="sort-version">KL MANAGER 2 <span id="version">UNKN</span></span>
             </div>
           </div>
         </div>
       </div>
     </div>
+<script>
+
+  
+</script>
+    <script type="module">
+      
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCfX5-hTGFbzVrNduPCyvOp0D1hfbR_H1g",
+    authDomain: "klmanager2.firebaseapp.com",
+    projectId: "klmanager2",
+    storageBucket: "klmanager2.appspot.com",
+    messagingSenderId: "827714070193",
+    appId: "1:827714070193:web:7231a8b2b8b12b2b05a490",
+    measurementId: "G-8J3177TE21"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const auth = getAuth();
+  const db = getDatabase();
+
+  var kCoin;
+
+      
+/* ##################### J O I N ######################## */
+
+$('.ens-ggJoin').click(function(){
+
+// ####### 변수 생성
+  var email = $('.ens-input-join-email').val();
+  var password = $('.ens-input-join-password').val();
+  var team = $('.ens-input-join-team').val();
+  kCoin = 100;
+
+
+const starCountRef = ref(db, `confirm/exist/teams/${team}/owner`);
+    onValue(starCountRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data == "" || data == null) {
+
+// ####### 유저 계정 생성
+  createUserWithEmailAndPassword(auth, email, password, kCoin)
+  .then((userCredential) => {
+    const user = userCredential.user;
+// ############## 데이터 베이스에 정보 추가
+  set(ref(db, `teams/${team}`), {
+    email: email,
+    team: team,
+    kCoin: kCoin
+  });
+  set(ref(db, `confirm/exist/teams/${team}`), {
+    owner: email
+  });
+  $('.ens-frame.join').removeClass('vx');
+  $('.ens-frame.login').addClass('vx');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorCode, errorMessage);
+  });
+        
+      } else {
+      }
+    });
+  
+})
+      
+/* ##################### L O G I N ######################## */
+      
+$('.ens-ggLogin').click(function(){
+var email2 = $('.ens-input-login-email').val();
+var password2 = $('.ens-input-login-password').val();
+var team2 = $('.ens-input-login-team').val();
+signInWithEmailAndPassword(auth, email2, password2)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    const starCountRef = ref(db, `teams/${team2}`);
+    onValue(starCountRef, (snapshot) => {
+      const data = snapshot.val();
+      console.log(data);
+      var kCoinA = data.kCoin;
+      $('#kCoin').text(kCoinA);
+      kCoin = kCoinA;
+    });
+    $('.ens-frame.login').removeClass('vx');
+    $('.capt').removeClass('vx');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log('이메일 또는 비밀번호가 올바르지 않습니다.');
+  });
+})
+
+/* ############################################################## */
+
+$('.indi-players').click(function(){
+  var tku = $(this).attr('id');
+  var playerImages = `/data/images/players/${tku}.png`;
+  $('.ens-uPlayer').attr('src', playerImages)
+  $('.selectedPlayer').text(tku);
+  $('.ens-frame.recruit').addClass('vx');
+
+const starCountRef = ref(db, `players/playerSkills/${tku}`);
+    onValue(starCountRef, (snapshot) => {
+      const data = snapshot.val();
+      var sk1 = data.주행안정성;
+      var sk2 = data.사고회복력;
+      var sk3 = data.TOP3유지력;
+      var sk4 = data.뒷심;
+      var sk5 = data.라인효율성;
+      var sk1l = sk1.length;
+      var sk2l = sk2.length;
+      var sk3l = sk3.length;
+      var sk4l = sk4.length;
+      var sk5l = sk5.length;
+      if (sk1l < 1 || sk2l < 1 || sk3l < 1 || sk4l < 1 || sk5l < 1) {
+        $('#analData').text('데이터 요청 실패');
+      } else {
+      $('#analData').text('데이터 분석 중..');
+      setTimeout(function(){
+        $('.ens-12vPlayer').css('width', `${sk1}%`);
+        $('.ens-22vPlayer').css('width', `${sk2}%`);
+        $('.ens-32vPlayer').css('width', `${sk3}%`);
+        $('.ens-42vPlayer').css('width', `${sk4}%`);
+        $('.ens-52vPlayer').css('width', `${sk5}%`);
+        $('#analData').css('display', 'none');
+      }, 700)
+      }
+    });
+  
+});
+</script>
+<script type="module" defer src="/data/scripts/works.js"></script>
   </body>
 </html>

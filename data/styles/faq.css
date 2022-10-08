@@ -1,8 +1,8 @@
 .faq {
   width: 100%;
   height: auto;
-  padding: 12px 0;
-  background-color: var(--hc);
+  padding: 19px 0;
+  background-color: var(--white0);
 }
 
 .pret-question {
@@ -28,7 +28,7 @@
   height: auto;
   margin-left: 27px;
   display: none;
-  border-left: 3px solid #eeeeee;
+  border-left: 3px solid var(--white2);
 }
 
 .pret-question-body span {
@@ -46,6 +46,7 @@
   justify-content: space-around;
   font-weight: 200!important;
   font-size: 27px!important;
+  margin-top: 3.7px;
 }
 
 .view .pret-question-body {
@@ -61,15 +62,16 @@
 }
 
 .pret-question-head span {
-  font-size: 17px;
-  color: var(--fa);
-  font-weight: 300;
+  font-size: 15px;
+  color: var(--black0);
+  font-weight: 400;
 }
 
 .pret-question-body span {
   font-size: 14px;
-  color: var(--fa);
+  color: var(--black0);
   font-weight: 200;
+  padding-right: 28px;
 }
 
 a.clicktomove {

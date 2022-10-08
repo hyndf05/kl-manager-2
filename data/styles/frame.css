@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: 'IBM Plex Sans KR', sans-serif;
   transition: .4s all;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 input, button {
@@ -24,7 +26,7 @@ html, body {
 .wrap {
   width: 100%;
   height: auto;
-  background-color: var(--bg);
+  background-color: var(--white1);
 }
 
 .inner {
@@ -61,7 +63,7 @@ body.la .loading {
   position: relative;
 }
 
-.loading span {
+.loading span.setr {
   position: relative;
   top: 67px;
   width: auto;
@@ -74,8 +76,8 @@ body.la .loading {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--hc);
-  border: 1px solid var(--bd);
+  background-color: var(--white0);
+  border: 1px solid var(--white2);
   position: fixed;
   z-index: 10;
   bottom: 12px;
@@ -92,7 +94,29 @@ body.la .loading {
 }
 
 #mode span {
+  font-weight: 200;
   font-size: 23px;
   display: none;
-  color: var(--fh);
+  color: var(--black0);
+}
+
+.alti {
+  position: absolute;
+  top: 11px;
+}
+
+.alti > span {
+  color: var(--special3);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.alti-progress {
+  width: 0%;
+  height: 2px;
+  background-color: var(--black1);
+  position: absolute;
+  top: 0;
+  transition: .25s all;
+  left: 0;
 }
