@@ -1,0 +1,114 @@
+.ex-join-league-class {
+  width: 100%;
+    height: 58px;
+    display: flex;
+      box-shadow: 1px 1px 5px #e1e1e1;
+    margin-top: 6px;
+    background-color: #ffffff;
+}
+
+.ex-join-league-ax {
+      width: calc(100% - 38px);
+  height: 100%;
+}
+
+.ex-join-league-class-title {
+      width: 100%;
+    height: 56%;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+}
+
+.ex-join-league-class-sub {
+      width: 100%;
+    height: 44%;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+}
+
+.ex-join-league-ap {
+      display: flex;
+    width: 38px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.league-class-title {
+  font-size: 18px;
+  color: var(--black0);
+}
+
+.league-class-team {
+  font-size: 14px;
+  color: #909090;
+}
+
+.ex-join-league-ap span {
+  font-weight: 200;
+  font-size: 29px;
+}
+
+.ex-join-league-button {
+  width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 11px;
+    justify-content: space-between;
+}
+
+.ex-join-league-roomCreate {
+  display: flex;
+    width: 94%;
+    border-radius: 7px;
+    margin: 0 auto;
+    height: 44px;
+  display: none;
+    box-shadow: 0 0 4px #e1e1e1;
+}
+
+.ex-join-league-roomCreate button {
+  width: 52px;
+    border-radius: 0 7px 7px 0;
+    height: 100%;
+  font-size: 15px;
+}
+
+.ex-join-league-roomCreate input {
+      border-radius: 7px 0 0 7px;
+    padding-left: 11px;
+    width: calc(100% - 52px);
+    font-size: 17px;
+    height: 100%;
+}
+
+.roomCreate {
+  color: var(--black0);
+}
+
+.roomCreateCancel {
+  color: #ff0000;
+}
+
+.league-class-load {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.league-class-load span {
+  font-size: 16px;
+  color: var(--special3);
+}
+
+.ex-join-league-button-right span {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.leaguecontents-room-brv.vx {
+  right: 0;
+  z-index: 10;
+}

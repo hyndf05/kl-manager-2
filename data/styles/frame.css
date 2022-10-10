@@ -38,6 +38,9 @@ body.ox .wrap {
   height: 100%;
 }
 
+.e-csn {
+  display: none;
+}
 .mtb {
   margin-top: 7px;
 }

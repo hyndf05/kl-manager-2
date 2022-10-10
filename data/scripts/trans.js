@@ -1,0 +1,59 @@
+$('.ec-join-league').click(function(){
+  $('.create').addClass('e-csn');
+  $('.px-main').addClass('e-csn');
+  $('.ex-join-league').removeClass('e-csn');
+  $('.ex-manage').addClass('e-csn');
+  $('.ex-join-ranking').addClass('e-csn');
+  $('.ex-other').addClass('e-csn');
+  $('.ex-howtoplay').addClass('e-csn');
+})
+
+$('.ec-manage').click(function(){
+  $('.create').addClass('e-csn');
+  $('.px-main').addClass('e-csn');
+  $('.ex-join-league').addClass('e-csn');
+  $('.ex-manage').removeClass('e-csn');
+  $('.ex-join-ranking').addClass('e-csn');
+  $('.ex-other').addClass('e-csn');
+  $('.ex-howtoplay').addClass('e-csn');
+})
+
+$('.ec-ranking').click(function(){
+  $('.create').addClass('e-csn');
+  $('.px-main').addClass('e-csn');
+  $('.ex-join-league').addClass('e-csn');
+  $('.ex-manage').addClass('e-csn');
+  $('.ex-join-ranking').removeClass('e-csn');
+  $('.ex-other').addClass('e-csn');
+  $('.ex-howtoplay').addClass('e-csn');
+})
+
+$('.ec-other').click(function(){
+  $('.create').addClass('e-csn');
+  $('.px-main').addClass('e-csn');
+  $('.ex-join-league').addClass('e-csn');
+  $('.ex-manage').addClass('e-csn');
+  $('.ex-join-ranking').addClass('e-csn');
+  $('.ex-other').removeClass('e-csn');
+  $('.ex-howtoplay').addClass('e-csn');
+})
+
+$('.ec-howtoplay').click(function(){
+  $('.create').addClass('e-csn');
+  $('.px-main').addClass('e-csn');
+  $('.ex-join-league').addClass('e-csn');
+  $('.ex-manage').addClass('e-csn');
+  $('.ex-join-ranking').addClass('e-csn');
+  $('.ex-other').addClass('e-csn');
+  $('.ex-howtoplay').removeClass('e-csn');
+})
+
+$('.ens-home').click(function(){
+  $('.create').removeClass('e-csn');
+  $('.px-main').removeClass('e-csn');
+  $('.ex-join-league').addClass('e-csn');
+  $('.ex-manage').addClass('e-csn');
+  $('.ex-join-ranking').addClass('e-csn');
+  $('.ex-other').addClass('e-csn');
+  $('.ex-howtoplay').addClass('e-csn');
+})

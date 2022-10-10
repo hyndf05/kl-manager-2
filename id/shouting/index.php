@@ -19,84 +19,69 @@
     </div>
     <div class="logs">
       <div class="logs-ind">
-        <span id="dfi">아아아</span>
+        <span id="dfi">로드 중..</span>
       </div>
     </div>
 
 <script type="module">
-
-  var xi, newXi;
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
-  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCEl_Ttt2Px35LhEfqz5-KMGcSot-nWmjo",
-    authDomain: "klmanager-shouting.firebaseapp.com",
-    projectId: "klmanager-shouting",
-    storageBucket: "klmanager-shouting.appspot.com",
-    messagingSenderId: "328538561081",
-    appId: "1:328538561081:web:9a5f2598e2723eb82ecbe8",
-    measurementId: "G-MZRQVT0CE6"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  const db = getDatabase();
-  
-  $('.chng').click(function(){
-
+var xi, newXi;
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: "AIzaSyCEl_Ttt2Px35LhEfqz5-KMGcSot-nWmjo",
+authDomain: "klmanager-shouting.firebaseapp.com",
+projectId: "klmanager-shouting",
+storageBucket: "klmanager-shouting.appspot.com",
+messagingSenderId: "328538561081",
+appId: "1:328538561081:web:9a5f2598e2723eb82ecbe8",
+measurementId: "G-MZRQVT0CE6"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getDatabase();
+$('.chng').click(function(){
 let shout = $('.shout').val();
-    
 let today = new Date();   
-
 let year = today.getFullYear(); // 년도
 let month = today.getMonth() + 1;  // 월
 let date = today.getDate();  // 날짜
 let day = today.getDay();  // 요일
-
 let date2 = year + '년' + month + '월' + date + '일';
-    
 const starCountRef = ref(db, `data/x/num`);
 onValue(starCountRef, (snapshot) => {
-  const data = snapshot.val();
-  xi = Number(data);
-  newXi = xi + 1;
-  $('#n').text(newXi);
-
+const data = snapshot.val();
+xi = Number(data);
+newXi = xi + 1;
+$('#n').text(newXi);
 set(ref(db, `data/shout/archive/${newXi}`), {
-  shout: shout,
-  date: date2
+shout: shout,
+date: date2
 });
-  
 });  
-
-    var nums = $('#n').text();
-    var numsAdded =  Number(nums) + 1;
-    console.log(nums, numsAdded);
+var nums = $('#n').text();
+var numsAdded =  Number(nums) + 1;
+console.log(nums, numsAdded);
 set(ref(db, `data/x`), {
-  num: nums
+num: nums
 });
-
 set(ref(db, `data/live`), {
-  shout: shout
+shout: shout
 });
-
-  
+$('.shout').val('');
 })
-
 setInterval(function(){
-  const starCountRef = ref(db, `data/live/shout`);
-  onValue(starCountRef, (snapshot) => {
-    const data33 = snapshot.val();
-    $('.logs-ind span').text(data33);
-  })
+const starCountRef = ref(db, `data/live/shout`);
+onValue(starCountRef, (snapshot) => {
+const data33 = snapshot.val();
+$('#dfi').text(data33);
+})
 }, 1000)
 </script>
     <span id="n"></span>
