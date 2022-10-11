@@ -112,3 +112,73 @@
   right: 0;
   z-index: 10;
 }
+
+.leaguecontents-allPlayers-team {
+  width: 100%;
+    overflow: auto;
+  height: 194px;
+      position: relative;
+      background-color: #eeeeee;
+}
+
+.leaguecontents-allPlayers-team > .inner {
+      height: 150px;
+    position: absolute;
+    bottom: 0;
+      width: auto;
+    overflow-x: auto;
+    display: inline-flex;
+  left: 0;
+}
+
+.leaguecontents-allPlayers-team-ind {
+      width: 109px;
+    padding: 0 3px;
+    height: 100%;
+    position: relative;
+}
+
+.leaguecontents-allPlayers-team::-webkit-scrollbar {
+  display: none;
+}
+
+.leaguecontents-allPlayers {
+  width: 100%;
+  height: 398px;
+}
+
+.leaguecontents-allPlayers-team-ind-face {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.leaguecontents-allPlayers-team-ind-face > img {
+  width: 100%;
+}
+
+.leaguecontents-allPlayers-team-ind-bot {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.leaguecontents-allPlayers-team-ind-name {
+  font-size: 18px;
+}
+
+.leaguecontents-allPlayers-team.lati-team2 {
+  margin-top: 11px;
+}
+
+.leaguecontents-team1-sers, .leaguecontents-team2-sers {
+  font-size: 24px;
+  font-family: 'SB Aggro';
+  color: #ff0000;
+      position: sticky;
+    top: 12px;
+    width: 100%;
+    left: 11px;
+    display: block;
+}

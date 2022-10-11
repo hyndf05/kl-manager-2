@@ -328,6 +328,8 @@
 
 #ens-comparecontents-main-player {
   background-color: #e7bbbb;
+  padding: 5px 6px;
+  margin-bottom: 2px;
 }
 
 .ens-comparecontents-sub-player select {

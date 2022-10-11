@@ -14,3 +14,4 @@ $('.leaguecontents-room-brx.ens-frame .ens-icon').click(function(){
 $('.leaguecontents-room-brv.ens-frame .ens-icon').click(function(){
   $('.leaguecontents-room-brv.ens-frame').removeClass('vx');
 })
+

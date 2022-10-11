@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>PRE-ALPHA ^ KL MANAGAER v2</title>
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Secular+One&display=swap" rel="stylesheet">
@@ -35,12 +36,18 @@
     <script defer src="/data/scripts/league.js"></script>
   </head>
   <body class="la ox">
+    <div id="alert">
+      <div class="inner">
+        <span class="alertMessage"></span>
+      </div>
+    </div>
     <div class="viewpoint2">
       <div class="leaguecontents-room-brv ens-frame">
         <div class="ens-header">
           <div class="inner">
             <div class="ens-subject">
               <span class="ens-subject-sub league-contents-room-m-title"></span>
+              <span class="ens-subject-sub league-contents-room-m-sub"></span>
             </div>
             <div class="ens-icon">
               <span class="material-symbols-outlined">close</span>
@@ -54,6 +61,7 @@
         </div>
         <div class="leaguecontents-allPlayers">
           <div class="leaguecontents-allPlayers-team lati-team1">
+            <span class="leaguecontents-team1-sers"></span>
             <div class="inner">
               <div class="leaguecontents-allPlayers-team-ind lati-player1">
                 <div class="leaguecontents-allPlayers-team-ind-face">
@@ -106,6 +114,7 @@
             </div>
           </div>
           <div class="leaguecontents-allPlayers-team lati-team2">
+            <span class="leaguecontents-team2-sers"></span>
             <div class="inner">
               <div class="leaguecontents-allPlayers-team-ind lati-player1">
                 <div class="leaguecontents-allPlayers-team-ind-face">
@@ -164,6 +173,7 @@
           <div class="inner">
             <div class="ens-subject">
               <span class="ens-subject-sub league-contents-room-m-title"></span>
+              <span class="ens-subject-sub league-contents-room-m-sub"></span>
             </div>
             <div class="ens-icon">
               <span class="material-symbols-outlined">close</span>
@@ -177,6 +187,7 @@
         </div>
         <div class="leaguecontents-allPlayers">
           <div class="leaguecontents-allPlayers-team lati-team1">
+            <span class="leaguecontents-team1-sers"></span>
             <div class="inner">
               <div class="leaguecontents-allPlayers-team-ind lati-player1">
                 <div class="leaguecontents-allPlayers-team-ind-face">
@@ -229,6 +240,7 @@
             </div>
           </div>
           <div class="leaguecontents-allPlayers-team lati-team2">
+            <span class="leaguecontents-team2-sers"></span>
             <div class="inner">
               <div class="leaguecontents-allPlayers-team-ind lati-player1">
                 <div class="leaguecontents-allPlayers-team-ind-face">
@@ -288,7 +300,7 @@
         <div class="ens-header">
           <div class="inner">
             <div class="ens-subject">
-              <span class="ens-subject-sub">방출</span>
+              <span class="ens-subject-sub">개발자 응원!</span>
             </div>
             <div class="ens-icon">
               <span class="material-symbols-outlined">close</span>
@@ -296,8 +308,8 @@
           </div>
         </div>
         <div class="ens-content">
-          <a href="//asked.kr/hyndf05" target="_blank">ASKED.KR</a>
-          <a href="//instagram.com/hyndf05" target="_blank">INSTAGRAM.COM</a>
+          <a href="//instagram.com/hyndf05" class="dev-gSupp"><button>INSTAGRAM</button></a>
+          <a href="//asked.kr/hyndf05" class="dev-gSupp"><button>ASKED</button></a>
         </div>
       </div>
       <div class="emx ens-frame">
@@ -435,7 +447,7 @@
           <span>비교하기</span>
         </div>
         <div class="ens-comparecontents-wrap">
-          <span class="ens-comparecontents-v0-rrm ens-comparecontents-v0-rsj" style="position:absolute;color:var(--special3);top:61px;left:50px;display:none;">데이터 수집 중..</span>
+          <span class="ens-comparecontents-v0-rrm ens-comparecontents-v0-rsj" style="position:absolute;color:var(--special3);top:63px;left:50px;display:none;">데이터 수집 중..</span>
           <div style="display:none;" class="ens-comparecontents-v0-rrm loadingio-spinner-rolling-qu4ok438lul"><div class="ldio-47fyb33vnrp"><div></div></div></div>
         </div>
         <div class="ens-comparecontents-v0-setlist ens-comparecontents-v1-setdesk">
@@ -857,6 +869,23 @@
                   <span>프로젝트에 기여하시면 크레딧 영역에 닉네임이 등록되며, 참여에 대한 금전적 보상은 없습니다.</span>
                 </div>
               </div>
+              <div class="pret-question">
+                <div class="pret-question-head">
+                  <span>광고에 대해</span>
+                  <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="pret-question-body">
+                  <span>'KL Manager 2'는 고등학교에 재학중인 학생이 운영하고 있으며,</span>
+                  <span>도메인(Gabia)ㆍ데이터 베이스(Firebase) 비용을 홀로 충당하기에 어려움이 있습니다.</span>
+                  <span>이에 따라, 카카오 광고를 본 페이지 하단에 배치하였습니다.</span>
+                  <span>양해 부탁드립니다, 감사합니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="inner">
+              <span>Sponsored Content</span>
             </div>
           </div>
           <div class="footer">
@@ -882,7 +911,7 @@
                 </span>
               </div>
               <div class="footer-line">
-                <span class="user-credut">Sponsored by NiZ Esports</span>
+                <span class="user-credit">Sponsored by <span id="sponsors"></span></span>
               </div>
               <div class="footer-line version">
                 <span class="sort-version">KL MANAGER 2 <span id="version">UNKN</span></span>
@@ -890,7 +919,7 @@
             </div>
           </div>
         </div>
-        <div class="ex-join-league">
+        <div class="ex-join-league e-csn">
 
           <div class="ex-join-league-button">
             <div class="ex-join-league-button-left">
@@ -916,19 +945,18 @@
           </div>
           
         </div>
-        <div class="ex-manage"></div>
-        <div class="ex-join-ranking"></div>
-        <div class="ex-other"></div>
-        <div class="ex-howtoplay"></div>
+        <div class="ex-manage e-csn"></div>
+        <div class="ex-join-ranking e-csn"></div>
+        <div class="ex-other e-csn"></div>
+        <div class="ex-howtoplay e-csn"></div>
       </div>
     </div>
     <script type="module">
-      
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
-import { getDatabase, ref, set, onValue, update, child, get } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
+import { getDatabase, ref, set, onValue, update, child, get, remove } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -955,7 +983,7 @@ var klTeam = '';
 var selPosition = '';
 
 
-/* ##################### J O I N ######################## */
+/* ####################### J O I N ############################## */
 
 $('.ens-ggJoin').click(function(){
 
@@ -994,17 +1022,18 @@ $('.ens-ggJoin').click(function(){
         });
         $('.ens-frame.join').removeClass('vx');
         $('.ens-frame.login').addClass('vx');
+        alert('가입이 승인되었습니다.');
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        alert('가입이 거부되었습니다.');
       });
     } else {}
   });
 })
 
-/* ##################### L O G I N ######################## */
+/*############################## L O G I N ################################ */
 
 $('.ens-ggLogin').click(function(){
   var email2 = $('.ens-input-login-email').val();
@@ -1025,15 +1054,16 @@ $('.ens-ggLogin').click(function(){
     });
     $('.ens-frame.login').removeClass('vx');
     $('.capt').removeClass('vx');
+    alert('로그인 하셨습니다.');
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log('이메일 또는 비밀번호가 올바르지 않습니다.');
+    alert('이메일 또는 비밀번호가 올바르지 않습니다.');
   });
 })
 
-/* ############################################################## */
+/* ########################### P L A Y E R S ' I N F O ################################### */
 
 $('.indi-players').click(function(){
   $('body').addClass('ox');
@@ -1042,7 +1072,6 @@ $('.indi-players').click(function(){
   $('.ens-uPlayer').attr('src', playerImages)
   $('.selectedPlayer').text(tku);
   $('.ens-frame.recruit').addClass('vx');
-  
   const starCountRef = ref(db, `players/playerSkills/${tku}`);
   onValue(starCountRef, (snapshot) => {
     const data = snapshot.val();
@@ -1079,7 +1108,7 @@ $('.indi-players').click(function(){
   });
 });
 
-/* ############################################ */
+/* ###################### C O M P A R E - P L A Y E R ##################### */
 
 $('.ens-pPlayer').click(function(){
   $('.ens-frame.compare').addClass('vx');
@@ -1087,13 +1116,13 @@ $('.ens-pPlayer').click(function(){
   $('#ens-comparecontents-main-player').text(mainPlayer);
 })
 
-/* ############################################ */
+/* ############################################################## */
 
 $('.ens-bPlayer').click(function(){
   $('.select-position-ew').addClass('vx');
 })
 
-/* ############################################ */
+/* ############################################################## */
 
 var iox = 0;
 var ca100 = 0;
@@ -1218,7 +1247,6 @@ $('.ens-comparecontents-v0-button').click(function(){
         $('.ens-comparecontents-v1-stats-p3-content-progress-subPlayer').css('width', `${p8}%`);
         $('.ens-comparecontents-v1-stats-p4-content-progress-subPlayer').css('width', `${p9}%`);
         $('.ens-comparecontents-v1-stats-p5-content-progress-subPlayer').css('width', `${p10}%`);
-        console.log(subPlayerStat);
         iox ++;
         ca21 = p6 + p7;
         ca22 = p6 + p8;
@@ -1354,7 +1382,7 @@ $('.ens-comparecontents-v0-button').click(function(){
   })
 })
 
-/* ################################# */
+/* ############################################################## */
 
 $('.ens-comparecontents-retry').click(function(){
   $(this).css('display', 'none');
@@ -1420,7 +1448,7 @@ $('.ens-comparecontents-retry').click(function(){
   caResult100R = 0;
 })
 
-/* ################################ */
+/* ############################################################## */
 
 $('.ens-rec-player-lst19').click(function(){
   selPosition = $('.rec-select-position option:selected').val();
@@ -1446,7 +1474,6 @@ $('.ens-rec-player-lst19').click(function(){
     onValue(starCountRef2, (snapshot) => {
       const data = snapshot.val();
       playerPositionNo = data;
-      console.log(data);
       if (playerPositionNo == '') {
         if (playerTeamExist115 == 0) {
           if (kCoin => playerValue115) {
@@ -1457,12 +1484,10 @@ $('.ens-rec-player-lst19').click(function(){
               영입: 1,
               소속팀: klTeam
             });
-            console.log(selPosition);
             kCoin = kCoin - playerValue115;
             update(ref(db, `teams/${klTeam}`), {
               kCoin: kCoin
             });
-            console.log(kCoin);
             if (selPosition == 'SA') {
               update(ref(db, `teams/${klTeam}`), {
                 SA: sPlayerSelected
@@ -1511,7 +1536,7 @@ $('.ens-rec-player-lst19').click(function(){
   }
 })
 
-/* ########################## */
+/* ############################################################## */
 
 var sa;
 var rn;
@@ -1521,7 +1546,6 @@ var hy;
 var ia;
 
 function onStateChange() {
-  console.log('sadsad');
   const starCountRef3 = ref(db, `teams/${klTeam}`);
   onValue(starCountRef3, (snapshot) => {
     const data3 = snapshot.val();
@@ -1540,7 +1564,7 @@ function onStateChange() {
   });
 }
 
-/* ################################ */
+/* ############################################################## */
 
 var positionPlayer111 = '';
 var getPlayerPosition111 = '';
@@ -1590,8 +1614,8 @@ $('.emx-button').click(function(){
   $('.ens-frame.emx').removeClass('vx');
 })
 
-/* ################################### */
-      
+/* ################################### 22.10.11 ^ 수정 완료 */
+var iisox;
 var sa22;
 var rn22;
 var md22;
@@ -1606,11 +1630,14 @@ var hy23;
 var ia23;
 var leagueClassTitle = '';
 var num = '';
+var e0 = 0;
+var e1 = 0;
 $('.ex-join-league-roomCreate button').click(function(){
   $('.ens-frame.leaguecontents-room-brx').addClass('vx');
   leagueClassTitle = $('.ex-join-league-roomCreate input').val();
   $('.league-contents-room-m-title').text(leagueClassTitle);
   num = Math.random().toString(36).substr(2,11);
+  $('.league-contents-room-m-sub').text(num);
   set(ref(db, `matches/archive/${num}`), {
     team1: klTeam,
     team2: '',
@@ -1627,7 +1654,9 @@ $('.ex-join-league-roomCreate button').click(function(){
     ready1: 0,
     ready2: 0,
     start: 0,
-    accessId: num
+    accessId: num,
+    exit: 0,
+    mExit: 0
   });
   const starCountRef13 = ref(db, `teams/${klTeam}`);
   onValue(starCountRef13, (snapshot) => {
@@ -1638,28 +1667,37 @@ $('.ex-join-league-roomCreate button').click(function(){
     sw22 = data13.SW;
     hy22 = data13.HY;
     ia22 = data13.IA;
+    $('.leaguecontents-team1-sers').text(klTeam);
     $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player1 .leaguecontents-allPlayers-team-ind-name').text(sa22);
+    $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player1 .leaguecontents-allPlayers-team-ind-face img').attr('src', `/data/images/players/${sa22}.png`);
     $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player2 .leaguecontents-allPlayers-team-ind-name').text(rn22);
+    $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player2 .leaguecontents-allPlayers-team-ind-face img').attr('src', `/data/images/players/${rn22}.png`);
     $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player3 .leaguecontents-allPlayers-team-ind-name').text(md22);
+    $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player3 .leaguecontents-allPlayers-team-ind-face img').attr('src', `/data/images/players/${md22}.png`);
     $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player4 .leaguecontents-allPlayers-team-ind-name').text(sw22);
+    $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player4 .leaguecontents-allPlayers-team-ind-face img').attr('src', `/data/images/players/${sw22}.png`);
     $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player5 .leaguecontents-allPlayers-team-ind-name').text(hy22);
+    $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player5 .leaguecontents-allPlayers-team-ind-face img').attr('src', `/data/images/players/${hy22}.png`);
     $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player6 .leaguecontents-allPlayers-team-ind-name').text(ia22);
+    $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player6 .leaguecontents-allPlayers-team-ind-face img').attr('src', `/data/images/players/${ia22}.png`);
+    $('.leaguecontents-notice-scr').text('상대를 기다리는 중..');
   });
   
-  
-  setInterval(function(){
-    var player2isexist = '';
+// 나의 팀: team1
+  var player2isexist = '';
+  iisox = setInterval(function(){
     const starCountRef14 = ref(db, `matches/live/${num}`);
     onValue(starCountRef14, (snapshot) => {
       const data14 = snapshot.val();
+      e0 = data14.exit;
+      e1 = data14.mExit;
       player2isexist = data14.team2;
     });
-    if (player2isexist === null) {
+    if (player2isexist == '') {
     } else {
-      const starCountRef15 = ref(db, `matches/live/${num}`);
+      const starCountRef15 = ref(db, `teams/${player2isexist}`);
       onValue(starCountRef15, (snapshot) => {
         const data15 = snapshot.val();
-        player2isexist = data15.team2;
         sa23 = data15.SA;
         rn23 = data15.RN;
         md23 = data15.MD;
@@ -1667,17 +1705,45 @@ $('.ex-join-league-roomCreate button').click(function(){
         hy23 = data15.HY;
         ia23 = data15.IA;
       });
+      $('.leaguecontents-team2-sers').text(player2isexist);
       $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player1 .leaguecontents-allPlayers-team-ind-name').text(sa23);
       $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player2 .leaguecontents-allPlayers-team-ind-name').text(rn23);
       $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player3 .leaguecontents-allPlayers-team-ind-name').text(md23);
       $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player4 .leaguecontents-allPlayers-team-ind-name').text(sw23);
       $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player5 .leaguecontents-allPlayers-team-ind-name').text(hy23);
       $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player6 .leaguecontents-allPlayers-team-ind-name').text(ia23);
+      $('.leaguecontents-notice-scr').text('대기 중..');
+      clearInterval(iisox);   
+      if (e == 0) {} else if (e == 1) {
+        $('.leaguecontents-notice-scr').text('상대가 게임을 떠났습니다..');
+        setTimeout(function(){$('.leaguecontents-notice-scr').text('새로운 상대를 기다리는 중..');},1400)
+        update(ref(db, `matches/live/${num}`), {
+            exit: 0
+          });
+      }
     }
-  }, 1200)
+  }, 2000)
 })
 
+/* ################ */
 
+$('.leaguecontents-room-brx.ens-frame .ens-icon').click(function(){
+  var delClass = $('.leaguecontents-room-brx.ens-frame .league-contents-room-m-sub').text();
+  set(ref(db, `matches/live/${delClass}`), {
+    team1: null
+  });
+  clearInterval(iisox);
+})
+
+/* ################################# */
+
+$('.leaguecontents-room-brv.ens-frame .ens-icon').click(function(){
+  var exitClass = $('.leaguecontents-room-brv.ens-frame .league-contents-room-m-sub').text();
+  update(ref(db, `matches/live/${exitClass}`), {
+    exit: 1
+  });
+})
+      
 /* ###################################### */
 
 $('.roomCreate').click(function(){
@@ -1718,9 +1784,11 @@ $('.ec-join-league, .ex-join-league-button-right, .leaguecontents-room-brx.ens-f
         </div>
         `);
         $('.league-class-load').css('display', 'none');
+        /* ########################################################## 22.10.11 ^ 수정 완료*/
         $('.ex-join-league-ap').click(function(){
           $('.leaguecontents-room-brv').addClass('vx');
           var accessIdCR = $(this).attr('id');
+          $('.league-contents-room-m-sub').text(accessIdCR);
           update(ref(db, `matches/live/${accessIdCR}`), {
             team2: klTeam
           });
@@ -1732,7 +1800,7 @@ $('.ec-join-league, .ex-join-league-button-right, .leaguecontents-room-brx.ens-f
           const starCountRef14 = ref(db, `matches/live/${clAccessId}`);
           onValue(starCountRef14, (snapshot) => {
             const data14 = snapshot.val();
-            var team192 = data14.team2;
+            var team192 = data14.team1;
             var leagueClassTitle221 = data14.title;
             $('.league-contents-room-m-title').text(leagueClassTitle221);
             const starCountRef55 = ref(db, `teams/${team192}`);
@@ -1750,6 +1818,7 @@ $('.ec-join-league, .ex-join-league-button-right, .leaguecontents-room-brx.ens-f
               $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player4 .leaguecontents-allPlayers-team-ind-name').text(sw212);
               $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player5 .leaguecontents-allPlayers-team-ind-name').text(hy212);
               $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player6 .leaguecontents-allPlayers-team-ind-name').text(ia212);
+              $('.leaguecontents-team1-sers').text(team192);
               const starCountRef56 = ref(db, `teams/${klTeam}`);
               onValue(starCountRef56, (snapshot) => {
                 const data56 = snapshot.val();
@@ -1759,12 +1828,13 @@ $('.ec-join-league, .ex-join-league-button-right, .leaguecontents-room-brx.ens-f
                 var sw222 = data56.SW;
                 var hy222 = data56.HY;
                 var ia222 = data56.IA;
-                $('.leaguecontents-allPlayers-team.lati-team1 .leaguecontents-allPlayers-team-ind.lati-player1 .leaguecontents-allPlayers-team-ind-name').text(sa222);
+                $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player1 .leaguecontents-allPlayers-team-ind-name').text(sa222);
                 $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player2 .leaguecontents-allPlayers-team-ind-name').text(rn222);
                 $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player3 .leaguecontents-allPlayers-team-ind-name').text(md222);
                 $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player4 .leaguecontents-allPlayers-team-ind-name').text(sw222);
                 $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player5 .leaguecontents-allPlayers-team-ind-name').text(hy222);
                 $('.leaguecontents-allPlayers-team.lati-team2 .leaguecontents-allPlayers-team-ind.lati-player6 .leaguecontents-allPlayers-team-ind-name').text(ia222);
+                $('.leaguecontents-team2-sers').text(klTeam);
               })
             });
           })
