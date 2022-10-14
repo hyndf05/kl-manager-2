@@ -150,3 +150,7 @@ $('.ens-fea').click(function(){
   $('.ens-frame.aside').removeClass('vx');
   $('body').removeClass('ox');
 })
+
+$('.ens-asidecontents-req-login').click(function(){
+  $('.ens-frame.login').addClass('vx');
+})

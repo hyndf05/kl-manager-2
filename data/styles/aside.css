@@ -72,3 +72,21 @@
   align-items: center;
   justify-content: center;
 }
+
+.ens-asidecontents-req-login {
+  position: absolute;
+  right: 47px;
+  width: 75px;
+  height: 75%;
+}
+
+.ens-asidecontents-req-login-button {
+  width: 100%;
+  font-size: 15px;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px #7d9c19;
+  color: #ffffff;
+  font-weight: 300;
+  background-color: #16471F;
+}

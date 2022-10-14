@@ -118,7 +118,7 @@
     overflow: auto;
   height: 194px;
       position: relative;
-      background-color: #eeeeee;
+      background-color: #f9f9f9;
 }
 
 .leaguecontents-allPlayers-team > .inner {
@@ -181,4 +181,18 @@
     width: 100%;
     left: 11px;
     display: block;
+}
+
+.leaguecontents-league-staa {
+      background-color: #0A0A2E;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    padding: 5px 12px;
+  z-index: 1;
+}
+
+.leaguecontents-league-staa span {
+    font-size: 18px;
+    color: #ffffff;
 }

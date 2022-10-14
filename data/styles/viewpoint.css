@@ -102,6 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 
 .ens-icon span {
@@ -111,6 +112,7 @@
 
 .ens-subject-sub {
   font-size: 19px;
+  margin-top: 2px;
 }
 
 .ens-content {
